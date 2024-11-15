@@ -1,0 +1,77 @@
+Tipos primitivos
+int
+float
+str
+bool
+------------------------------
+Para saber o tipo da variável
+type(variavel)
+
+----------------------------------------
+
+Operadores
+()
+** (potencia) ou fuçao interna pow(4,3)
+* / //(divisao inteira) %
++ -
+
+Ordem de precedência
+()
+**
+* / // %
++ -
+
+-----------------------------------------
+print('='*20) - imprime = 20 vezes
+
+aula07a.py exemplo de print
+
+Utilizando Módulo - 8
+import (importa todo modulo)
+from modulo import funcionlidade (importa apenas aquela funcionalidade do modulo)
+
+Biblioteca padrão math (tudo minusculo)
+math
+  ceil      arredondamento pra cima
+  floor     arredondamento pra baixo
+  trunc     ele elimina da virgula pra frente 
+  pow       potencia
+  sqrt      raiz quadrada
+  factorial calcula fatorial
+
+exemplo, importar só a funcionalidade de raiz quadrada do math
+from math import sqrt, floor
+
+#Versão instalada do python
+py --version
+
+#Listar pacotes estão instalados na minha maquina
+py -m pip list
+
+#Atualizar pip caso necessario
+py -m pip install --upgrade pip
+
+#Instalar novo pacote
+py -m pip install nome_do_pacote
+
+#Desisntalar um pacote
+py -m pip uninstall nome_do_pacote
+
+#Site para pesquisar pacotes
+pypi.org
+
+# para saber informações especificas de um pacote
+py -m pip show nome_do_pacote
+
+py -m pip install -r requireis.txt
+
+#IMPORTAR modulos ou pacotes
+
+import nome_pacote         #impor generico deve ser feito sempre no começo do script
+from math import sqrt, sin #importa apenas a função sqrt e sin do modulo math
+from math import *         #inport universal, importa todas as funçoes do mudolo, só que não é muito recomendado
+import math as m           #cria um alias para o modulo math de nome m
+
+#Importar um modulo que a gente mesmo criou
+
+
